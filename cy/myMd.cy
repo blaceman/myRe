@@ -1,3 +1,4 @@
+(function(utils) {
 
     utils.constants = {
         APPID:  	 NSBundle.mainBundle.bundleIdentifier,
@@ -75,3 +76,4 @@
             }
         }
     }
+})(exports);
