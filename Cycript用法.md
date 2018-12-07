@@ -155,11 +155,18 @@
 + monkeyDev 网络加载cy文件
 
   + ![image-20181207174155909](https://ws2.sinaimg.cn/large/006tNbRwly1fxybmh7wpjj30yb0llgsm.jpg)
-
     + LoadAtLaunch:是否默认加载到cycript坏境中,对于monkeyDev的ms、md文件起作用,自己的的网络cy文件没有效果,要自己@import myMD(key名)导入。
-
     + priority:优先级
-
     + url:网络的cy文件
-
     + content:cy脚本
+
++ cycript逆向思路(本地验证):
+
+  + pviews()查看视图层次
+  + (#0x10102e630(内存地址)).hidden = YES 确定按钮位置
+  + pactions(#0x10102e630)  打印targetAction
+  + 手动调用targetAction查看效果
+  + ....
+  + rp(#0x10102e630)打印响应者 nextResponder
+  + 然后printMethods(@"类名")查找方法名
+  + 找到可疑的方法,调用,查看是否是想要的效果(要猜)
