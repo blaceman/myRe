@@ -3,7 +3,7 @@
     utils.constants = {
         APPID:  	 NSBundle.mainBundle.bundleIdentifier, //id
         APPPATH:     NSBundle.mainBundle.bundlePath,  //资源路径
-        APPHOME:	 NSHomeDirectory(), 
+        APPHOME:	 NSHomeDirectory(), //沙盒
         APPDOC:      NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0],
         APPLIBRARY:  NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0],
         APPCACHE:    NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]
