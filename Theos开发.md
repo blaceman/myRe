@@ -95,6 +95,8 @@
    
    ```
 
++ 如果需要用到源代码的属性或者方法,可以自己新建一个类的.h文件,把属性和方法申明到.h文件,就可以愉快的用啦。
+
 + 其他的参考[wifi](http://iphonedevwiki.net/index.php/Logos)
 
 ### 安装:[iOS逆向工程之Theos](https://www.cnblogs.com/ludashi/p/5714095.html)
