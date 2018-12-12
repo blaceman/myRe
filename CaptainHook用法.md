@@ -115,7 +115,8 @@
 
 + 1.导入#import <CaptainHook/CaptainHook.h>头文件
 + 2.声明使用的类:CHDeclareClass() 
-+ 3.CHConstructor{}//来写加载的类(CHLoadLateClass()),或者钩子(CHHook(),)
++ 3.CHConstructor{}来写加载的类(CHLoadLateClass())
 
 + 4.CHMethod()、CHOptimizedMethod()、CHOptimizedClassMethod()声明新函数
-+ CHSuper():调用原方法实现。
++ 5.CHConstructor{}下挂钩子(CHHook(),)
++ 6.CHSuper():调用原方法实现。
