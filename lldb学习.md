@@ -15,6 +15,8 @@
 + x新建entitlements.plist文件,签名权限:codesign -s - --entiltilements.plist -f debugserver
 
    ```plist
+   
+   ```
   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
   <plist version="1.0">
   <dict>
@@ -116,7 +118,7 @@
 + 其他:
   + 查看当前模块:Debug - Debug Workflow - Shared Libraries选项
   + 查看地址的内存信息:Debug - Debug Workflow - View Momery选项
-
+  + 动态调试中,要查看某个函数给别的函数调用的位置,可以先hook住这个函数,然后断言。就可以看到奔溃位置的函数调用啦,很方便~
 
 
 ### lldb使用思路
